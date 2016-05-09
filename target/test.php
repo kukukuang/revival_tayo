@@ -1,5 +1,13 @@
 ﻿<?php  
-  
+
+mysql_query("set session character_set_connection=utf8;");
+
+mysql_query("set session character_set_results=utf8;");
+
+mysql_query("set session character_set_client=utf8;");
+
+
+
 $con=mysqli_connect("http://52.38.179.125","root","revival16","test");  
   
 if (mysqli_connect_errno($con))  
